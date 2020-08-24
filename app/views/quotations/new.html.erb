@@ -1,0 +1,17 @@
+<h1>Add Quote</h1>
+
+<%= form_with scope: :quotation, url: quotations_path, local: true do |f| %>
+    <p>
+        <%= f.label :quote %>
+        <%= f.text_field :quote %>
+    </p>
+    <p>
+        <%= f.label :author %>
+        <%= f.text_field :author %>
+    </p>
+    <p>
+        <%= f.submit %>
+<% end %>
+
+<p><%= link_to "Return to quote listing", quotations_path %></p> 
+
