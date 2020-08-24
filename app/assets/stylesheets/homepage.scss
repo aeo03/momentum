@@ -1,0 +1,23 @@
+@import "bootstrap/scss/bootstrap";
+
+body {
+  background-image: image-url('background_image.jpg'); 
+}
+
+html, body, .container {
+    height: 100%;
+}
+
+.container {
+    display: -webkit-flexbox;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
